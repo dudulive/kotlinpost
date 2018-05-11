@@ -9,7 +9,7 @@ import java.net.HttpURLConnection
 import java.net.URL
 import java.net.URLEncoder
 
-class BaseRepository(){
+abstract class BaseRepository(){
 
     fun execute(fullParameters: FullParameters):HttpResponse{
         val conn: HttpURLConnection
